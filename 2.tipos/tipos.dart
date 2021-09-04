@@ -33,4 +33,39 @@ void main() {
   print(texto2);
   print(edadNum);
   print(interpolacion2);
+
+  //------------------------ BOLEANOS ------------------------
+  String textoBool = "";
+  if (textoBool.isEmpty) {
+    print("El texto esta vacio");
+  }
+
+  //------------------------ LISTAS ------------------------
+  var lista = ['mazda', 'kia', 'renault'];
+  List<String> lista2 = ['mazda', 'kia', 'renault'];
+
+  var lista3 = ['chevrolet', ...lista2];
+  lista3.add('ford');
+  var lista7 = ["hola", 1, true, null];
+
+// spread
+  var lista4 = [...lista2, ...lista3];
+
+  List<String>? lista6 = null;
+  var listas5 = [...lista3, ...?lista6];
+
+  print(lista);
+  print(lista2);
+  print('imprimiendo lista 3 ${lista3}');
+
+//sets
+  var listaSet = {'mazda', 'kia', 'renault'};
+//maps
+  var maps = {
+    'red': 'rojo',
+    'green': 'verde',
+    'blue': 'azul',
+  };
+
+  maps.clear();
 }
