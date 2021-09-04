@@ -66,6 +66,5 @@ void main() {
     'green': 'verde',
     'blue': 'azul',
   };
-
   maps.clear();
 }
