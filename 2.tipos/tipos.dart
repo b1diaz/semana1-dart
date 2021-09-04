@@ -21,6 +21,15 @@ void main() {
 
   var texto7 = "Vamos a interpolar texto \'$texto6\'. terminado";
 
+  var textoMultilinea = ''' 
+     CREATE TABLE table_name (
+        column1 datatype,
+        column2 datatype,
+        column3 datatype
+    ); ''';
+
+  var texto011 = r'mostrar este caracter \';
+
   print(texto2);
   print(edadNum);
   print(interpolacion2);
