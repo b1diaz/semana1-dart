@@ -25,4 +25,8 @@ main() {
   print('Promedio: ${sumar(listaEdades) / listaEdades.length}');
 
   print('Promedio: ${(sumar(listaEdades) / listaEdades.length).round()}');
+
+  //calcular el coseno de un numero
+
+  print('Coseno de 45: ${cos(45)}');
 }
