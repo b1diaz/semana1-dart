@@ -1,17 +1,17 @@
 //----------------------------- MIXINS ---------------------------------------
-abstract class Dibujar {
+mixin Dibujar {
   void dibujar() => print('Dibujando');
 }
 
-abstract class Leer {
+mixin Leer {
   void leer() => print('Leyendo');
 }
 
-abstract class Ejercitarse {
+mixin Ejercitarse {
   void ejercitarse() => print('Ejercitandose');
 }
 
-abstract class Boxear {
+mixin Boxear {
   void boxear() => print('Boxeando');
 }
 
@@ -88,12 +88,15 @@ void main() {
   print('INGENIERO: ${ingeniero.toString()}');
   ingeniero.dibujar();
   ingeniero.leer();
+  print('La ciencia que trabajo es ${ingeniero.ciencia}');
   print('');
   print('DOCTOR: ${doctor.toString()}');
   doctor.leer();
   doctor.ejercitarse();
+  print('Mi especializacion es ${doctor.especialidad}');
   print('');
   print('BOXEADOR: ${boxeador.toString()}');
   boxeador.boxear();
   boxeador.ejercitarse();
+  print('Mi nombre peso es ${boxeador.peso}');
 }
